@@ -1,0 +1,157 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", serif;
+  background-color: #ffff;
+  background-image: url(./images/Quarter\ background\ Image.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: top;
+}
+img {
+  max-width: 100%;
+}
+
+ul li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header,
+main,
+footer {
+  width: 100%;
+  max-width: 1440px;
+  margin-inline: auto;
+  padding-inline: 123px;
+}
+
+nav {
+  margin-bottom: 5.5em;
+  display: flex;
+  align-items: center;
+  font-size: 1.125rem;
+  font-weight: 500;
+  gap: 5%;
+  color: #343434;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 5%;
+  flex: 1.5;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  flex: 2;
+  flex-wrap: wrap;
+  gap: 5%;
+}
+
+.globe {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#login,
+#signup {
+  padding: 1em;
+  border-radius: 20px;
+}
+#login {
+  background-color: #d9d9d9;
+}
+#signup {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.hero-section {
+  margin-bottom: 10em;
+}
+.hero-section,
+.first-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.125rem;
+  line-height: 3;
+}
+
+h1,
+.first-content h2 {
+  font-size: 3rem;
+  line-height: 1;
+}
+.get-started-button {
+  padding: 0.5em 2em;
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+.first-content {
+  line-height: 2;
+}
+.download-buttons {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-top: 2em;
+  color: #ffffff;
+}
+.download {
+  display: flex;
+  align-items: center;
+  background-color: #000000;
+  padding: 0.5em;
+  font-size: 1rem;
+  border-radius: 5px;
+  gap: 15px;
+  line-height: 1.5;
+  width: auto;
+}
+.download-buttons a:nth-child(2) {
+  padding: 0.5em 2em 0.5em;
+}
+
+footer {
+  margin-top: 5em;
+  background-color: #00796b;
+  color: #ffffff;
+  font-size: 1.125rem;
+  padding-block: 2em;
+}
+
+.link-section {
+  display: flex;
+  justify-content: space-between;
+}
+.link-section ul li {
+  margin-bottom: 1.5em;
+}
+.second-footer-section {
+  display: flex;
+  font-size: 0.75em;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+
+@media (max-width: 900px) {
+  header,
+  main,
+  footer {
+    padding: 0;
+  }
+}
