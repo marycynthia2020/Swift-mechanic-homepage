@@ -7,10 +7,11 @@
 body {
   font-family: "Montserrat", serif;
   background-color: #ffff;
-  background-image: url(./images/Quarter\ background\ Image.png);
+  /* background-image: url(./images/Quarter\ background\ Image.png);
   background-repeat: no-repeat;
   background-position-x: right;
-  background-position-y: top;
+  background-position-y: top; */
+  width: 100vw;
 }
 img {
   max-width: 100%;
@@ -27,10 +28,11 @@ a {
 header,
 main,
 footer {
+  border: 1px solid red;
   width: 100%;
   max-width: 1440px;
-  margin-inline: auto;
-  padding-inline: 123px;
+  /* margin-inline: auto; */
+  /* padding-inline: 123px; */
 }
 
 nav {
@@ -39,7 +41,8 @@ nav {
   align-items: center;
   font-size: 1.125rem;
   font-weight: 500;
-  gap: 5%;
+  /* gap: 5%; */
+  justify-content: center;
   color: #343434;
 }
 
@@ -55,7 +58,7 @@ nav ul {
   align-items: center;
   flex: 2;
   flex-wrap: wrap;
-  gap: 5%;
+  justify-content: space-between;
 }
 
 .globe {
@@ -149,9 +152,11 @@ footer {
 }
 
 @media (max-width: 900px) {
-  header,
-  main,
-  footer {
-    padding: 0;
+  .hero-section,
+  .first-content {
+    flex-direction: column;
+  }
+  nav ul {
+    display: none;
   }
 }
