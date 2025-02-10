@@ -8,7 +8,6 @@ body {
   font-family: "Montserrat", serif;
   overflow-x: hidden;
   width: 100vw;
-  position: relative;
 }
 
 header,
@@ -19,11 +18,12 @@ footer {
   max-width: 1440px;
   margin-inline: auto;
   padding-inline: 123px;
+  position: relative;
 }
 .background {
   position: absolute;
   top: 0px;
-  right: 12.5%;
+  right: 0%;
   width: 585px;
   height: 745px;
   z-index: -1;
