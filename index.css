@@ -6,12 +6,28 @@
 
 body {
   font-family: "Montserrat", serif;
-  background-color: #ffff;
-  /* background-image: url(./images/Quarter\ background\ Image.png);
-  background-repeat: no-repeat;
-  background-position-x: right;
-  background-position-y: top; */
+  overflow-x: hidden;
   width: 100vw;
+  position: relative;
+}
+
+header,
+main,
+footer {
+  z-index: 10;
+  width: 100%;
+  max-width: 1440px;
+  margin-inline: auto;
+  padding-inline: 123px;
+  border: 1px solid black;
+}
+.background {
+  position: absolute;
+  top: 0px;
+  right: 12.5%;
+  width: 585px;
+  height: 745px;
+  z-index: -1;
 }
 img {
   max-width: 100%;
@@ -25,31 +41,22 @@ a {
   color: inherit;
 }
 
-header,
-main,
-footer {
-  border: 1px solid red;
-  width: 100%;
-  max-width: 1440px;
-  /* margin-inline: auto; */
-  /* padding-inline: 123px; */
-}
-
 nav {
-  margin-bottom: 5.5em;
+  margin-bottom: 3em;
   display: flex;
   align-items: center;
   font-size: 1.125rem;
   font-weight: 500;
-  /* gap: 5%; */
+  gap: 5%;
   justify-content: center;
   color: #343434;
+  padding-top: 0.5em;
 }
 
 .logo-section {
   display: flex;
   align-items: center;
-  gap: 5%;
+  gap: 10px;
   flex: 1.5;
 }
 
@@ -59,6 +66,10 @@ nav ul {
   flex: 2;
   flex-wrap: wrap;
   justify-content: space-between;
+  gap: 5%;
+}
+.second-nav-ul {
+  flex: 2.5;
 }
 
 .globe {
@@ -79,9 +90,6 @@ nav ul {
   color: #ffffff;
 }
 
-.hero-section {
-  margin-bottom: 10em;
-}
 .hero-section,
 .first-content {
   display: flex;
@@ -115,7 +123,6 @@ h1,
 }
 .download {
   display: flex;
-  align-items: center;
   background-color: #000000;
   padding: 0.5em;
   font-size: 1rem;
@@ -125,7 +132,7 @@ h1,
   width: auto;
 }
 .download-buttons a:nth-child(2) {
-  padding: 0.5em 2em 0.5em;
+  padding: 0.5em 1.5em 0.5em;
 }
 
 footer {
@@ -152,11 +159,49 @@ footer {
 }
 
 @media (max-width: 900px) {
+  .background {
+    display: none;
+  }
+  header,
+  main,
+  footer {
+    padding-inline: 20px;
+  }
+
+  .logo-section {
+    font-size: 1rem;
+  }
+  .logo-section img {
+    width: 50px;
+    height: 50px;
+  }
+
   .hero-section,
   .first-content {
     flex-direction: column;
   }
   nav ul {
     display: none;
+  }
+
+  .get-started-button {
+    padding: 0.5em;
+  }
+  .first-content,
+  .hero-section {
+    line-height: 2;
+    margin-bottom: 4em;
+  }
+  .first-content {
+    flex-direction: column-reverse;
+  }
+  .download-buttons {
+    flex-direction: column;
+  }
+  .link-section {
+    flex-direction: column;
+  }
+  footer {
+    margin-top: 2.5em;
   }
 }
