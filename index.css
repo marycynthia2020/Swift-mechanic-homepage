@@ -211,7 +211,7 @@ nav img:last-child {
   footer {
     margin-top: 2.5em;
   }
-  .none {
+  nav img:last-child {
     display: block;
   }
 }
