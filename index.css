@@ -155,7 +155,7 @@ footer {
   align-items: center;
   gap: 1em;
 }
-.none {
+nav img:last-child {
   display: none;
 }
 
