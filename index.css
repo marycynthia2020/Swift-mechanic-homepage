@@ -19,7 +19,6 @@ footer {
   max-width: 1440px;
   margin-inline: auto;
   padding-inline: 123px;
-  border: 1px solid black;
 }
 .background {
   position: absolute;
@@ -63,10 +62,9 @@ nav {
 nav ul {
   display: flex;
   align-items: center;
-  flex: 2;
   flex-wrap: wrap;
+  flex: 2;
   justify-content: space-between;
-  gap: 5%;
 }
 .second-nav-ul {
   flex: 2.5;
@@ -157,6 +155,9 @@ footer {
   align-items: center;
   gap: 1em;
 }
+.none {
+  display: none;
+}
 
 @media (max-width: 900px) {
   .background {
@@ -171,7 +172,8 @@ footer {
   .logo-section {
     font-size: 1rem;
   }
-  .logo-section img {
+  .logo-section img,
+  nav img {
     width: 50px;
     height: 50px;
   }
@@ -180,7 +182,11 @@ footer {
   .first-content {
     flex-direction: column;
   }
-  nav ul {
+  h1 {
+    font-weight: 600;
+  }
+  .first-nav-ul,
+  .second-nav-ul {
     display: none;
   }
 
@@ -191,6 +197,7 @@ footer {
   .hero-section {
     line-height: 2;
     margin-bottom: 4em;
+    gap: 30px;
   }
   .first-content {
     flex-direction: column-reverse;
@@ -203,5 +210,8 @@ footer {
   }
   footer {
     margin-top: 2.5em;
+  }
+  .none {
+    display: block;
   }
 }
